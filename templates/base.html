@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Matrix Blog - {% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="{{ url_for('index') }}">:: Digital Stream ::</a></h1>
+        <p><a href="{{ url_for('create') }}">[ + Initiate New Post ]</a></p>
+      </header>
+      <hr style="border-color: #004400" />
+      <main>{% block content %}{% endblock %}</main>
+    </div>
+  </body>
+</html>

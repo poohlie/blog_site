@@ -1,0 +1,82 @@
+/* static/style.css */
+
+/* Global Reset and Body Styling */
+body {
+    background-color: #000000; /* Deep black background */
+    color: #00FF41; /* Iconic Matrix neon green for text */
+    font-family: 'Consolas', 'Monaco', monospace; /* Monospaced font for "code" feel */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Container for clean centering */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #00AA00; /* Subtle green border */
+    box-shadow: 0 0 10px #006600; /* Light green glow effect */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #00FF41; /* Main neon green */
+    border-bottom: 1px solid #004400;
+    padding-bottom: 5px;
+}
+
+/* Links (The 'Digital Links') */
+a {
+    color: #00CC00; /* A slightly darker green for unvisited links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00FF41; /* Brightens on hover */
+    text-decoration: underline;
+}
+
+/* Blog Post Card/Snippet */
+.post-snippet {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 3px solid #00AA00;
+}
+
+.post-snippet h2 a {
+    font-size: 1.5em;
+}
+
+/* Forms (For the 'create' page) */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #050505; /* Very dark grey/black input background */
+    border: 1px solid #004400;
+    color: #00FF41; /* Neon text inside input */
+    font-family: inherit;
+}
+
+form button {
+    background-color: #006600;
+    color: #00FF41;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: inherit;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #009900;
+}
