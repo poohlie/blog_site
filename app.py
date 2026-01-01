@@ -79,3 +79,8 @@ def delete(id):
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
+if __name__ == '__main__':
+    # Use the port provided by the environment variable, default to 8080 if not set
+    port = int(os.environ.get('PORT', 8080))
+    app.run(debug=True, host='0.0.0.0', port=port)
